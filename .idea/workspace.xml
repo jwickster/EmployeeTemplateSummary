@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="" />
+    <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/Engineer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Employee.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Engineer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Intern.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Manager.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/engineer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/intern.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/manager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Develop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Develop/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Employee.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -41,12 +56,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Develop" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605466539773</updated>
       <workItem from="1605466540835" duration="633000" />
+      <workItem from="1605467541865" duration="2254000" />
     </task>
     <servers />
   </component>
@@ -73,5 +111,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1717" height="266" key="GridCell.Tab.0.bottom" timestamp="1605468063807">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state width="1717" height="266" key="GridCell.Tab.0.bottom/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063807" />
+    <state width="1717" height="266" key="GridCell.Tab.0.center" timestamp="1605468063799">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state width="1717" height="266" key="GridCell.Tab.0.center/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063799" />
+    <state width="1717" height="266" key="GridCell.Tab.0.left" timestamp="1605468063786">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state width="1717" height="266" key="GridCell.Tab.0.left/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063786" />
+    <state width="1717" height="266" key="GridCell.Tab.0.right" timestamp="1605468063806">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state width="1717" height="266" key="GridCell.Tab.0.right/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063806" />
+    <state x="2118" y="267" key="IDE.errors.dialog" timestamp="1605468947321">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state x="2118" y="267" key="IDE.errors.dialog/0.25.3840.1006@0.25.3840.1006" timestamp="1605468947321" />
+    <state x="1750" y="125" width="1561" height="805" key="dock-window-1" timestamp="1605469439355">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state x="1750" y="125" width="1561" height="805" key="dock-window-1/0.25.3840.1006@0.25.3840.1006" timestamp="1605469439355" />
+    <state x="1750" y="125" width="1561" height="805" key="dock-window-2" timestamp="1605469439355">
+      <screen x="0" y="25" width="3840" height="1006" />
+    </state>
+    <state x="1750" y="125" width="1561" height="805" key="dock-window-2/0.25.3840.1006@0.25.3840.1006" timestamp="1605469439355" />
   </component>
 </project>
