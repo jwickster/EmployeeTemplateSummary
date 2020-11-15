@@ -1,5 +1,5 @@
-const Employee = require('Employee.js');
-const htmlBlocks = require('htmlBlocks.js');
+const Employee = require('controller/Employee.js');
+const htmlHeaderFile = require('views/HTMLheaderFile.js');
 
 class Engineer extends Employee {
   //constructor to call default destructor, create objects and allocate memory on the heap
