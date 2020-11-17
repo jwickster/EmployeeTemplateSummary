@@ -20,7 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/views/HTMLheaderFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/HTMLheaderFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/Intern.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/Manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/htmlRenderer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Engineer.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Engineer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Employee.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Employee.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Engineer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Engineer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Intern.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Intern.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Manager.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Manager.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +57,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1605466539773</updated>
       <workItem from="1605466540835" duration="633000" />
-      <workItem from="1605467541865" duration="2986000" />
+      <workItem from="1605467541865" duration="4181000" />
+      <workItem from="1605563812134" duration="3274000" />
+      <workItem from="1605576501122" duration="331000" />
     </task>
     <servers />
   </component>
@@ -102,22 +116,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1717" height="266" key="GridCell.Tab.0.bottom" timestamp="1605468063807">
+    <state width="1717" height="266" key="GridCell.Tab.0.bottom" timestamp="1605531714423">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
-    <state width="1717" height="266" key="GridCell.Tab.0.bottom/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063807" />
-    <state width="1717" height="266" key="GridCell.Tab.0.center" timestamp="1605468063799">
+    <state width="1717" height="266" key="GridCell.Tab.0.bottom/0.25.3840.1006@0.25.3840.1006" timestamp="1605531714423" />
+    <state width="1717" height="266" key="GridCell.Tab.0.center" timestamp="1605531714422">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
-    <state width="1717" height="266" key="GridCell.Tab.0.center/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063799" />
-    <state width="1717" height="266" key="GridCell.Tab.0.left" timestamp="1605468063786">
+    <state width="1717" height="266" key="GridCell.Tab.0.center/0.25.3840.1006@0.25.3840.1006" timestamp="1605531714422" />
+    <state width="1717" height="266" key="GridCell.Tab.0.left" timestamp="1605531714422">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
-    <state width="1717" height="266" key="GridCell.Tab.0.left/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063786" />
-    <state width="1717" height="266" key="GridCell.Tab.0.right" timestamp="1605468063806">
+    <state width="1717" height="266" key="GridCell.Tab.0.left/0.25.3840.1006@0.25.3840.1006" timestamp="1605531714422" />
+    <state width="1717" height="266" key="GridCell.Tab.0.right" timestamp="1605531714423">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
-    <state width="1717" height="266" key="GridCell.Tab.0.right/0.25.3840.1006@0.25.3840.1006" timestamp="1605468063806" />
+    <state width="1717" height="266" key="GridCell.Tab.0.right/0.25.3840.1006@0.25.3840.1006" timestamp="1605531714423" />
     <state x="2118" y="267" key="IDE.errors.dialog" timestamp="1605468947321">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>

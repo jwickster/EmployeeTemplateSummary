@@ -7,6 +7,6 @@ const Engineer = require(controller/Engineer.js);
 
 const Manager = require("Manager.js");
 const Intern = require("Intern.js");
-const htmlBlocks = require("./lib/htmlBlocks.js");
 const fs = require("fs");
 const open = require("open");
+const Engineer = require('./controller/Engineer');
