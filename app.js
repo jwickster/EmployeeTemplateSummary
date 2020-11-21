@@ -99,9 +99,9 @@ function buildTeam(){
           name: "school",
           message: `Intern's school?`
         }
-      ]).then((answers)=>{
-        let intern = new Intern(answers.name, answers.id, answers.email,answers.school);
-        team.splice(team.length-1,0,intern.getHTML());
+      ]).then(function(answers) {
+        let intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+        team.splice(team.length - 1, 0, intern.getHTML());
         buildTeam();
       })
     }
@@ -125,8 +125,10 @@ function printHTML(team){
 
 ///Entrypoint of file
 
-initalize().then(function(answers) {
+initalize()
+    .then(function(answers) {
       const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+      //splice method to seperate team
       team.splice(team.length - 1, 0, manager.getHTML());
       buildTeam();
     });

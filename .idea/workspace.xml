@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -22,7 +25,7 @@
     <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/HTMLheaderFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Intern.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Intern.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,7 @@
       <workItem from="1605467541865" duration="4181000" />
       <workItem from="1605563812134" duration="3274000" />
       <workItem from="1605576501122" duration="331000" />
-      <workItem from="1605977656977" duration="3913000" />
+      <workItem from="1605977656977" duration="5607000" />
     </task>
     <servers />
   </component>
@@ -109,6 +112,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2858" y="353" key="#com.intellij.ide.util.MemberChooser" timestamp="1605983203644">
+      <screen x="0" y="25" width="5120" height="1361" />
+    </state>
+    <state x="2858" y="353" key="#com.intellij.ide.util.MemberChooser/0.25.5120.1361@0.25.5120.1361" timestamp="1605983203644" />
     <state width="1717" height="266" key="GridCell.Tab.0.bottom" timestamp="1605531714423">
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
@@ -137,5 +144,9 @@
       <screen x="0" y="25" width="3840" height="1006" />
     </state>
     <state x="1750" y="125" width="1561" height="805" key="dock-window-2/0.25.3840.1006@0.25.3840.1006" timestamp="1605469439355" />
+    <state x="2673" y="329" width="838" height="1032" key="search.everywhere.popup" timestamp="1605982176539">
+      <screen x="0" y="25" width="5120" height="1361" />
+    </state>
+    <state x="2673" y="329" width="838" height="1032" key="search.everywhere.popup/0.25.5120.1361@0.25.5120.1361" timestamp="1605982176539" />
   </component>
 </project>
