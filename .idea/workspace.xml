@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controller/Employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/HTMLheaderFile.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,7 +89,7 @@
       <workItem from="1605467541865" duration="4181000" />
       <workItem from="1605563812134" duration="3274000" />
       <workItem from="1605576501122" duration="331000" />
-      <workItem from="1605977656977" duration="374000" />
+      <workItem from="1605977656977" duration="3913000" />
     </task>
     <servers />
   </component>

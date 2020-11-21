@@ -1,12 +1,132 @@
 const inquirer = require('inquire');
-
-//controller logic in external forms
-const Employee = require(controller/Employee.js);
-const Engineer = require(controller/Engineer.js);
-
-
-const Manager = require("Manager.js");
-const Intern = require("Intern.js");
 const fs = require("fs");
 const open = require("open");
-const Engineer = require('./controller/Engineer');
+//Created by me classes
+const Manager = require("./controller/Manager.js");
+const Engineer = require("./controller/Engineer.js");
+const Intern = require("./controller/Intern.js");
+const htmlBlocks = require("./controller/htmlBlocks.js");
+const Employee = require("./controller/Employee.js");
+
+const team = [htmlBlocks.header(), htmlBlocks.footer()];
+
+
+//initialize function with user inputs
+
+function initalize(){
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "name",
+      message: `Manager name?`
+    },
+    {
+      type: "input",
+      name: "id",
+      message: `Manager's ID?`
+    },
+    {
+      type: "input",
+      name: "email",
+      message: `Manager's email?`
+    },
+    {
+      type: "input",
+      name: "officeNumber",
+      message: `Manager's office number?`
+    }
+  ])
+}
+
+///Function to build team
+
+function buildTeam(){
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "role",
+      message:"What type of team member would you like to add?",
+      choices: ["Engineer","Intern","I don't want to add any more team members"]
+    }
+  ]).then((answer)=> {
+    if (answer.role === "Engineer"){
+      return inquirer.prompt([
+        {
+          type: "input",
+          name: "name",
+          message: `What is your engineer's name?`
+        },
+        {
+          type: "input",
+          name: "id",
+          message: `What is your engineer's ID?`
+        },
+        {
+          type: "input",
+          name: "email",
+          message: `What is your engineer's email?`
+        },
+        {
+          type: "input",
+          name: "github",
+          message: `What is your engineer's GitHub??`
+        }
+      ]).then((answers)=>{
+        let engineer = new Engineer(answers.name, answers.id, answers.email,answers.github);
+        team.splice(team.length-1,0,engineer.getHTML());
+        buildTeam();
+      })
+    }
+    if (answer.role === "Intern"){
+      return inquirer.prompt([
+        {
+          type: "input",
+          name: "name",
+          message: `What is your intern's name?`
+        },
+        {
+          type: "input",
+          name: "id",
+          message: `Intern's ID?`
+        },
+        {
+          type: "input",
+          name: "email",
+          message: `Intern's email?`
+        },
+        {
+          type: "input",
+          name: "school",
+          message: `Intern's school?`
+        }
+      ]).then((answers)=>{
+        let intern = new Intern(answers.name, answers.id, answers.email,answers.school);
+        team.splice(team.length-1,0,intern.getHTML());
+        buildTeam();
+      })
+    }
+    
+    return printHTML(team);
+  });
+}
+
+
+function printHTML(team){
+  fs.writeFile("Team.html", team , function(err) {
+    if (err) {
+      throw err;
+    }
+    //else
+    console.log('Your team has been constructed!');
+  });
+  open("Team.html");
+};
+
+
+///Entrypoint of file
+
+initalize().then(function(answers) {
+      const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+      team.splice(team.length - 1, 0, manager.getHTML());
+      buildTeam();
+    });
