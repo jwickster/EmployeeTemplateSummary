@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04bfc012-f906-4ab7-afeb-178a256ace7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Develop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Develop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Engineer.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Engineer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Intern.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Intern.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Manager.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Develop" />
     </key>
   </component>
@@ -91,7 +95,7 @@
       <workItem from="1605467541865" duration="4181000" />
       <workItem from="1605563812134" duration="3274000" />
       <workItem from="1605576501122" duration="331000" />
-      <workItem from="1605977656977" duration="9407000" />
+      <workItem from="1605977656977" duration="10773000" />
     </task>
     <servers />
   </component>
