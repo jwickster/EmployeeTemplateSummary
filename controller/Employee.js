@@ -8,5 +8,25 @@ class Employee {
     this.role = role;
   }
   
+  //getter functions to return item;
+   getName() {
+    return this.name;
+   }
+   
+   getId() {
+    return this.id;
+   }
+   
+   getEmail(){
+    return this.email;
+   }
+   
+   getRole(){
+    return this.role = "Employee";
+   }
   
 }
+
+//export default Employee;
+
+module.exports = Employee;
