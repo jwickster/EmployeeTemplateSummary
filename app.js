@@ -1,4 +1,4 @@
-const inquirer = require('inquire');
+const inquirer = require("inquirer");
 const fs = require("fs");
 const open = require("open");
 //Created by me classes
@@ -46,7 +46,7 @@ function buildTeam(){
       type: "list",
       name: "role",
       message:"What type of team member would you like to add?",
-      choices: ["Engineer","Intern","I don't want to add any more team members"]
+      choices: ["Engineer","Intern","None"]
     }
   ]).then((answer)=> {
     if (answer.role === "Engineer"){
@@ -54,12 +54,12 @@ function buildTeam(){
         {
           type: "input",
           name: "name",
-          message: `What is your engineer's name?`
+          message: `Engineer's name?`
         },
         {
           type: "input",
           name: "id",
-          message: `What is your engineer's ID?`
+          message: `Engineer's ID?`
         },
         {
           type: "input",
@@ -82,7 +82,7 @@ function buildTeam(){
         {
           type: "input",
           name: "name",
-          message: `What is your intern's name?`
+          message: `Intern's name?`
         },
         {
           type: "input",
@@ -92,15 +92,17 @@ function buildTeam(){
         {
           type: "input",
           name: "email",
-          message: `Intern's email?`
+          message: `Intern's Email?`
         },
         {
           type: "input",
           name: "school",
-          message: `Intern's school?`
+          message: `Intern's School?`
         }
       ]).then(function(answers) {
+        //
         let intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+        //
         team.splice(team.length - 1, 0, intern.getHTML());
         buildTeam();
       })
