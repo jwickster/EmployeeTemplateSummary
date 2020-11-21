@@ -119,10 +119,10 @@ function printHTML(team){
       throw err;
     }
     //else
-    console.log('Your team has been constructed!');
+    console.log('Team constructed!');
   });
   open("Team.html");
-};
+}
 
 
 ///Entrypoint of file
