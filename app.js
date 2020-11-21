@@ -2,11 +2,11 @@ const inquirer = require('inquire');
 const fs = require("fs");
 const open = require("open");
 //Created by me classes
-const Manager = require("./controller/Manager.js");
-const Engineer = require("./controller/Engineer.js");
-const Intern = require("./controller/Intern.js");
-const htmlBlocks = require("./controller/htmlBlocks.js");
-const Employee = require("./controller/Employee.js");
+const Manager = require("./lib/Manager.js");
+const Engineer = require("./lib/Engineer.js");
+const Intern = require("./lib/Intern.js");
+const htmlBlocks = require("./lib/htmlBlocks.js");
+const Employee = require("./lib/Employee.js");
 
 const team = [htmlBlocks.header(), htmlBlocks.footer()];
 
