@@ -13,7 +13,7 @@ const team = [htmlBlocks.header(), htmlBlocks.footer()];
 
 //initialize function with user inputs
 
-function initalize(){
+function initialize(){
   return inquirer.prompt([
     {
       type: "input",
@@ -118,8 +118,11 @@ function buildTeam(){
           type: "input",
           name: "close",
           message: "Application closed select enter to continue"
+          
         }
-      ])
+       //process.exit(1)
+      ]);
+      process.exit(1);
     }
     
     return printHTML(team);
@@ -141,7 +144,7 @@ function printHTML(team){
 
 ///Entrypoint of file
 
-initalize()
+initialize()
     .then(function(answers) {
       const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
       //splice method to seperate team
