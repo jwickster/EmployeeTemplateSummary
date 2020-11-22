@@ -6,7 +6,7 @@ const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const htmlBlocks = require("./lib/htmlBlocks.js");
-const Employee = require("./lib/Employee.js");
+// const Employee = require("./lib/Employee.js");
 
 const team = [htmlBlocks.header(), htmlBlocks.footer()];
 
@@ -111,6 +111,23 @@ function buildTeam(){
         buildTeam();
       })
     }
+  
+    if(answer.role === "Karens"){
+      return inquirer.prompt([
+        {
+          type: "name",
+          name: "fool",
+          message: "fool"
+        
+        }
+        //process.exit(1)
+      ]);
+      process.exit(1);
+    }
+    
+    
+    
+    
     
     if(answer.role === "None"){
       return inquirer.prompt([
