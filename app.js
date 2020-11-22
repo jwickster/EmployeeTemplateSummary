@@ -45,8 +45,9 @@ function buildTeam(){
     {
       type: "list",
       name: "role",
-      message:"What type of team member would you like to add?",
-      choices: ["Engineer","Intern","None"]
+      message:"Add Team Member",
+      //Karens to replicate issue with none
+      choices: ["Engineer","Intern","None", "Karens"]
     }
   ]).then((answer)=> {
     if (answer.role === "Engineer"){
@@ -64,16 +65,19 @@ function buildTeam(){
         {
           type: "input",
           name: "email",
-          message: `What is your engineer's email?`
+          message: `Engineer's email?`
         },
         {
           type: "input",
           name: "github",
-          message: `What is your engineer's GitHub??`
+          message: `Engineer's GitHub??`
         }
       ]).then((answers)=>{
+        //decalre engineer instance
         let engineer = new Engineer(answers.name, answers.id, answers.email,answers.github);
+        //splice
         team.splice(team.length-1,0,engineer.getHTML());
+        //call buildTeam method
         buildTeam();
       })
     }
@@ -106,6 +110,16 @@ function buildTeam(){
         team.splice(team.length - 1, 0, intern.getHTML());
         buildTeam();
       })
+    }
+    
+    if(answer.role === "None"){
+      return inquirer.prompt([
+        {
+          type: "input",
+          name: "close",
+          message: "Application closed select enter to continue"
+        }
+      ])
     }
     
     return printHTML(team);
