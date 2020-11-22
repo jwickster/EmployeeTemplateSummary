@@ -50,7 +50,9 @@ function buildTeam(){
       choices: ["Engineer","Intern","None", "Karens"]
     }
   ]).then((answer)=> {
-    if (answer.role === "Engineer"){
+    const {role} = answer;
+    
+    if (role === "Engineer"){
       return inquirer.prompt([
         {
           type: "input",
@@ -70,7 +72,7 @@ function buildTeam(){
         {
           type: "input",
           name: "github",
-          message: `Engineer's GitHub??`
+          message: `Engineer's GitHub?`
         }
       ]).then((answers)=>{
         //decalre engineer instance
@@ -81,7 +83,7 @@ function buildTeam(){
         buildTeam();
       })
     }
-    if (answer.role === "Intern"){
+    if (role === "Intern"){
       return inquirer.prompt([
         {
           type: "input",
@@ -112,7 +114,7 @@ function buildTeam(){
       })
     }
   
-    if(answer.role === "Karens"){
+    if(role === "Karens"){
       return inquirer.prompt([
         {
           type: "name",
@@ -124,12 +126,7 @@ function buildTeam(){
       ]);
       process.exit(1);
     }
-    
-    
-    
-    
-    
-    if(answer.role === "None"){
+    if(role === "None"){
       return inquirer.prompt([
         {
           type: "input",
